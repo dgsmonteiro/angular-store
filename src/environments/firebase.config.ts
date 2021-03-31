@@ -1,8 +1,8 @@
 export const FireBaseConfig = {
-  apiKey: "<YOUR_API_KEY>",
-  authDomain: "<YOUR_AUTH_DOMAIN>",
-  databaseURL: "<YOUR_DATABASE_URL>",
-  projectId: "<YOUR_PROJECT_ID>",
-  storageBucket: "<YOUR_STORAGE_BUCKETS>",
-  messagingSenderId: "<YOUR_MESSAGING_SENDER_ID>",
+  apiKey: "AIzaSyDyCC21uSSElHBGy1bg74F5GjWZe15Qsg0",
+  authDomain: "loja-fb292.firebaseapp.com",
+  databaseURL: "https://loja-fb292.firebaseio.com",
+  projectId: "loja-fb292",
+  storageBucket: "loja-fb292.appspot.com",
+  messagingSenderId: "98833549003",
 };

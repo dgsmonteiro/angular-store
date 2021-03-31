@@ -1,6 +1,6 @@
 <br />
 <div class="container">
-  <!-- <div class="row" *ngIf="authService.isAdmin$ | async">
+  <div class="row" *ngIf="authService.isAdmin$ | async">
     <div class="col-sm">
       <div class="float-right">
         <button
@@ -13,26 +13,26 @@
         </button>
       </div>
     </div>
-  </div> -->
+  </div>
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-        <label for="brand_select">By Brands:</label>
+        <label for="brand_select">Por Marca:</label>
         <select
           class="form-control"
           name=""
           id="brand_select"
           [(ngModel)]="selectedBrand"
         >
-          <option *ngFor="let brand of brands" [ngValue]="brand">{{
-            brand
+          <option *ngFor="let marca of marcas" [ngValue]="marca">{{
+            marca
           }}</option>
         </select>
       </div>
       <ul class="list-group">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Notebooks</li>
+        <li class="list-group-item">Celulares</li>
+        <li class="list-group-item">Serviços</li>
       </ul>
     </div>
     <div class="col-md-9">
@@ -94,7 +94,7 @@
                     <p class="card-text">{{ product.productDescription }}</p>
                     <!--Card footer-->
                     <div class="card-footer">
-                      <span class="left">₹ {{ product.productPrice }}</span>
+                      <span class="left">R$ {{ product.productPrice }}</span>
                       <span class="right">
                         <a
                           placement="top"
@@ -112,7 +112,7 @@
                         >
                           <i class="fa fa-shopping-cart"></i>
                         </a>
-                        <!-- <a
+                        <a
                           placement="top"
                           mdbTooltip="Remove Product"
                           container="body"
@@ -120,7 +120,7 @@
                           (click)="removeProduct(product.$key)"
                         >
                           <i class="fa fa-trash"></i>
-                        </a> -->
+                        </a>
                       </span>
                     </div>
                   </div>

@@ -1,7 +1,7 @@
 import { Product } from "../../../../../shared/models/product";
 import { ShippingService } from "../../../../../shared/services/shipping.service";
 import { UserDetail, User } from "../../../../../shared/models/user";
-// import { AuthService } from "../../../../../shared/services/auth.service";
+import { AuthService } from "../../../../../shared/services/auth.service";
 import { Component, OnInit } from "@angular/core";
 import { NgForm } from "@angular/forms";
 import { Router } from "@angular/router";
@@ -20,7 +20,7 @@ export class ShippingDetailsComponent implements OnInit {
   products: Product[];
 
   constructor(
-    // authService: AuthService,
+    authService: AuthService,
     private shippingService: ShippingService,
     productService: ProductService,
     private router: Router
@@ -32,12 +32,12 @@ export class ShippingDetailsComponent implements OnInit {
     document.getElementById("resultTab").style.display = "none";
 
     this.products = productService.getLocalCartProducts();
-    // authService.user$.pipe(
-    //   map((user) => {
-    //     console.log({ user });
-    //     this.userDetails = user;
-    //   })
-    // );
+    authService.user$.pipe(
+      map((user) => {
+        console.log({ user });
+        this.userDetails = user;
+      })
+    );
   }
 
   ngOnInit() {}
