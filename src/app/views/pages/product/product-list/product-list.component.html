@@ -98,7 +98,7 @@
                       <span class="right">
                         <a
                           placement="top"
-                          mdbTooltip="Add to Wishlist"
+                          mdbTooltip="Adicionar aos Favoritos"
                           container="body"
                           (click)="addFavourite(product)"
                         >
@@ -106,7 +106,7 @@
                         </a>
                         <a
                           placement="top"
-                          mdbTooltip="Add to Cart"
+                          mdbTooltip="Adicionar ao Carrinho"
                           container="body"
                           (click)="addToCart(product)"
                         >
@@ -114,7 +114,7 @@
                         </a>
                         <a
                           placement="top"
-                          mdbTooltip="Remove Product"
+                          mdbTooltip="Remover Produto"
                           container="body"
                           *ngIf="authService.isAdmin$ | async"
                           (click)="removeProduct(product.$key)"
@@ -135,6 +135,8 @@
         <div class="text-center mt-3">
           <pagination-controls
             (pageChange)="page = $event"
+            previousLabel="Anterior"
+            nextLabel="Proximo"
           ></pagination-controls>
         </div>
       </div>

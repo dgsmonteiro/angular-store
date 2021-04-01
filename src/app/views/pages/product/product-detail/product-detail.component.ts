@@ -35,7 +35,7 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
         this.product = y;
       },
       (error) => {
-        this.toastrService.error("Error while fetching Product Detail", error);
+        this.toastrService.error("Erro ao buscar detalhe do produto", error);
       }
     );
   }

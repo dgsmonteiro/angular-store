@@ -79,10 +79,18 @@
               <span class="right">
                 <a
                   placement="top"
-                  mdbTooltip="Add to Wishlist"
+                  mdbTooltip="Adicionar aos Favoritos"
                   container="body"
                 >
                   <i class="fa fa-heart"></i>
+                </a>
+                <a
+                  placement="top"
+                  mdbTooltip="Adicionar ao Carrinho"
+                  container="body"
+                  (click)="addToCart(product)"
+                >
+                  <i class="fa fa-shopping-cart"></i>
                 </a>
               </span>
             </div>

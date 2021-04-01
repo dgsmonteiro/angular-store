@@ -56,4 +56,7 @@ export class BestProductComponent implements OnInit {
         }
       );
   }
+  addToCart(product: Product) {
+    this.productService.addToCart(product);
+  }
 }
