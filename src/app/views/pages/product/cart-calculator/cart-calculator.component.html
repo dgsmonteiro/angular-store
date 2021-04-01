@@ -1,5 +1,5 @@
 <h4 class="d-flex justify-content-between align-items-center mb-3">
-  <span class="text-muted">Your cart</span>
+  <span class="text-muted">Seu carrinho</span>
   <span class="badge badge-primary badge-pill">{{ products.length }}</span>
 </h4>
 <ul class="list-group mb-3">
@@ -14,11 +14,11 @@
   </li>
   <hr />
   <li class="list-group-item d-flex justify-content-between">
-    <span>Total (INR)</span>
+    <span>Total</span>
     <strong>R$ {{ totalValue }}</strong>
   </li>
   <a class="btn btn-primary" [routerLink]="['/products/all-products']"
-    >Continue Shipping</a
+    >Continuar Comprando</a
   >
-  <a class="btn btn-default" [routerLink]="['/checkouts']">Checkout</a>
+  <a class="btn btn-default" [routerLink]="['/checkouts']">Efetuar Pedido</a>
 </ul>

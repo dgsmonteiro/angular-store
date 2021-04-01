@@ -17,7 +17,7 @@ import { environment } from "../environments/environment";
 
 /* to load and set en.json as the default application language */
 export function setupTranslateFactory(service: TranslateService) {
-  return () => service.use("en");
+  return () => service.use("pt");
 }
 @NgModule({
   declarations: [AppComponent],

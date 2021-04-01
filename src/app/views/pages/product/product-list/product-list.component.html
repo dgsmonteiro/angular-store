@@ -17,23 +17,23 @@
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-        <label for="brand_select">Por Marca:</label>
+        <label for="brand_select">Por categoria:</label>
         <select
           class="form-control"
           name=""
           id="brand_select"
           [(ngModel)]="selectedBrand"
         >
-          <option *ngFor="let marca of marcas" [ngValue]="marca">{{
-            marca
+          <option *ngFor="let categoria of categorias" [ngValue]="categoria">{{
+            categoria
           }}</option>
         </select>
       </div>
-      <ul class="list-group">
+      <!-- <ul class="list-group">
         <li class="list-group-item">Notebooks</li>
         <li class="list-group-item">Celulares</li>
         <li class="list-group-item">Serviços</li>
-      </ul>
+      </ul> -->
     </div>
     <div class="col-md-9">
       <div class="container">

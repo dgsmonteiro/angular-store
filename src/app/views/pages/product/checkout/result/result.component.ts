@@ -50,7 +50,7 @@ export class ResultComponent implements OnInit {
       const pdf = new jspdf("p", "mm", "a4"); // A4 size page of PDF
       const position = 0;
       pdf.addImage(contentDataURL, "PNG", 0, position, imgWidth, imgHeight);
-      pdf.save("COOPERDEV.pdf"); // Generated PDF
+      pdf.save("pedido.pdf"); // Generated PDF
     });
   }
 }

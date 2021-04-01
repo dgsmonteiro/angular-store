@@ -1,6 +1,6 @@
 <div class="container mt-3">
   <div class="col-md order-md-1">
-    <h4 class="mb-3">Billing Address</h4>
+    <h4 class="mb-3">Endereço de Cobrança</h4>
     <form
       class="needs-validation"
       #userDetailsForm="ngForm"
@@ -8,7 +8,7 @@
     >
       <div class="row">
         <div class="col-md-6 mb-3">
-          <label for="firstName">First name</label>
+          <label for="firstName">Primeiro Nome</label>
           <input
             type="text"
             class="form-control"
@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="col-md-6 mb-3">
-          <label for="lastName">Last name</label>
+          <label for="lastName">Último Nome</label>
           <input
             type="text"
             class="form-control"
@@ -56,7 +56,7 @@
       </div>
 
       <div class="mb-3">
-        <label for="address">Address</label>
+        <label for="address">Endereço</label>
         <input
           type="text"
           class="form-control"
@@ -73,7 +73,7 @@
 
       <div class="mb-3">
         <label for="address2"
-          >Address 2
+          >Complemento
           <span class="text-muted">(Optional)</span>
         </label>
         <input
@@ -88,7 +88,7 @@
 
       <div class="row">
         <div class="col-md-5 mb-3">
-          <label for="country">Country</label>
+          <label for="country">País</label>
           <select
             class="custom-select d-block w-100"
             id="country"
@@ -97,7 +97,7 @@
             name="country"
           >
             <option value="">Choose...</option>
-            <option>United States</option>
+            <option>Brasil</option>
           </select>
           <div class="invalid-feedback">
             Please select a valid country.
@@ -113,14 +113,14 @@
             required
           >
             <option value="">Choose...</option>
-            <option>California</option>
+            <option>São Paulo</option>
           </select>
           <div class="invalid-feedback">
             Please provide a valid state.
           </div>
         </div>
         <div class="col-md-3 mb-3">
-          <label for="zip">Zip</label>
+          <label for="zip">CEP</label>
           <input
             type="text"
             class="form-control"
@@ -137,7 +137,7 @@
       </div>
       <hr class="mb-4" />
       <button class="btn btn-primary btn-lg btn-block" type="submit">
-        Continue to checkout
+        Fechar Pedido
       </button>
     </form>
   </div>
