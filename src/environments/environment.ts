@@ -5,6 +5,9 @@
 export const environment = {
   production: false,
   version: require("../../package.json").version,
+  ps_url: "https://ws.sandbox.pagseguro.uol.com.br",
+  pagseguro_script: "",
+  authentication_token: "",
 };
 
 /*
