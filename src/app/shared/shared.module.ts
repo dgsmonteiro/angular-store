@@ -14,6 +14,7 @@ import { NoAccessComponent } from "./components/no-access/no-access.component";
 import { PageNotFoundComponent } from "./components/page-not-found/page-not-found.component";
 import { FilterByBrandPipe } from "./pipes/filterByBrand.pipe";
 import { ProductService } from "./services/product.service";
+import { PagseguroService } from "./services/pagseguro.service";
 import { AdminGaurd } from "./guards/admin-gaurd";
 import { AuthGuard } from "./guards/auth_gaurd";
 import { AuthService } from "./services/auth.service";
@@ -81,6 +82,7 @@ import { FireBaseConfig } from "./../../environments/firebase.config";
     ProductService,
     UserService,
     FormBuilder,
+    PagseguroService,
   ],
 })
 export class SharedModule {}

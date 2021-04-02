@@ -3,13 +3,14 @@ import { Subscription, Observable } from "rxjs";
 import { environment } from "../../../environments/environment";
 import { RequestOptions } from "@angular/http";
 import { HttpClient } from "@angular/common/http";
+import { map } from "rxjs/operators";
 
 import { User } from "../models/user";
 
 declare var PagSeguroDirectPayment;
 
 @Injectable()
-export class PagseguroCardService {
+export class PagseguroService {
   private session: boolean;
   private subscriptions: Subscription[] = [];
   private sessionPagSeguro: boolean = false;
@@ -48,6 +49,22 @@ export class PagseguroCardService {
   //       );
   //     });
   // }
+  getPayment(params: {}) {
+    return this.http
+      .post(
+        `${environment.ps_url}/checkout?email=douglasmonteiro@icloud.com&token=${environment.ps_token}`,
+        params
+      )
+      .pipe(
+        map((data) => {
+          console.log(data);
+          return data;
+        })
+      )
+      .subscribe((resp) => {
+        console.log(resp);
+      });
+  }
 
   setPagSeguro() {
     this.sessionPagSeguro = true;

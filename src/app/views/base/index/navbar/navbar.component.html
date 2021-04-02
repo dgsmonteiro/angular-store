@@ -34,7 +34,7 @@
           >{{ this.translate.data["PRODUCTS"] | translate }}</a
         >
       </li>
-      <li class="nav-item" *ngIf="authService.isLoggedIn$ | async">
+      <li class="nav-item" *ngIf="authService.isAdmin$ | async">
         <a
           class="nav-link"
           href="jaascript:;;"
